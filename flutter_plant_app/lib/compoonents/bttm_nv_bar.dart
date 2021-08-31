@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_plant_app/constants.dart';
-import 'package:flutter_plant_app/screens/components/body.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class PlantBttmNavBar extends StatelessWidget {
