@@ -2,7 +2,10 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_plant_app/constants.dart';
 import 'package:flutter_plant_app/screens/components/heade_with_searchbox.dart';
-import '../../../constants.dart';
+import 'package:flutter_plant_app/screens/components/recommend_plats.dart';
+import 'package:flutter_plant_app/screens/components/title_with_morebttn.dart';
+
+import 'feature_plant.dart';
 
 class Body extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -11,32 +14,11 @@ class Body extends StatelessWidget {
       child: Column(
         children: [
           HeaderWIthSearchBox(size: size),
-          Container(
-            height: 25,
-            child: Stack(
-              children: [
-                Padding(
-                  padding: EdgeInsets.only(left: kDefaultPadding / 4),
-                  child: Text(
-                    "Recomended",
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-                Positioned(
-                  bottom: 0,
-                  left: 0,
-                  right: 0,
-                  child: Container(
-                    height: 7,
-                    color: kPrimaryColor.withOpacity(0.2),
-                  ),
-                )
-              ],
-            ),
-          ),
+          TitleWithMore(title: "Recommended", press: () {}),
+          RecommendWithPlant(),
+          TitleWithMore(title: "Featured Plants", press: () {}),
+          FeaturedPlant(),
+          SizedBox(height: kDefaultPadding),
         ],
       ),
     );

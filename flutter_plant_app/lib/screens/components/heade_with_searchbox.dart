@@ -36,8 +36,10 @@ class HeaderWIthSearchBox extends StatelessWidget {
               children: [
                 Text(
                   "Hi Noah!",
-                  style:
-                      Theme.of(context).textTheme.headline5!.copyWith(color: Colors.white, fontWeight: FontWeight.bold),
+                  style: Theme.of(context).textTheme.headline5!.copyWith(
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                      ),
                 ),
                 Spacer(),
                 Image.asset("assets/images/logo.png")

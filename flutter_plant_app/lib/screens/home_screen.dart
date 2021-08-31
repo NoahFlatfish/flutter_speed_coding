@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_plant_app/compoonents/bttm_nv_bar.dart';
 import 'package:flutter_plant_app/screens/components/body.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -8,6 +9,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: buildAppBar(),
       body: Body(),
+      bottomNavigationBar: PlantBttmNavBar(),
     );
   }
 
